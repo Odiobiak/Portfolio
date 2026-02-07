@@ -23,6 +23,81 @@
       </div>
       <a href="#contact" class="cta-button">Hire Me</a>
     </div>
+
+
+    <style>
+  /* AI AGENT SECTION */
+  .ai-agent-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3rem;
+    align-items: stretch;
+    margin-top: 2rem;
+  }
+
+  .ai-agent-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ai-agent-card-header {
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    background: #f7f7f7;
+    border-bottom: 1px solid #eaeaea;
+    letter-spacing: 0.5px;
+  }
+
+  .ai-agent-card iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    flex-grow: 1;
+  }
+
+  .ai-agent-copy h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .ai-agent-copy p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+
+  .ai-agent-copy ul {
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+  }
+
+  .ai-agent-copy li {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+    color: #333;
+  }
+
+  /* Mobile */
+  @media (max-width: 900px) {
+    .ai-agent-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .ai-agent-card {
+      min-height: 500px;
+    }
+  }
+</style>
+
+
+    
   </header>
 
   <section id="about">
@@ -34,19 +109,49 @@
     </div>
   </section>
 
-  <section id="ai-agent" class="container">
-    <h2>Ask My AI Agent</h2>
-      <p>
-        Curious about my background, experience, or skills? <strong>Ask away.</strong> This AI Agent is intuitive to capture any<strong>contact</strong> so please leave your contact detail and i will receive it and reach back <strong>ASAP</strong>.
-      </p>
-    <iframe
-      src="https://odiche-profile-ai-agent.hf.space"
-      width="100%"
-      height="600"
-      style="border: none; border-radius: 12px;"
-      loading="lazy"
-    ></iframe>
-  </section>
+<section id="ai-agent">
+  <div class="container">
+    <div class="ai-agent-grid">
+
+      <!-- LEFT: AI CHAT -->
+      <div class="ai-agent-card">
+        <div class="ai-agent-card-header">
+          AI Assistant
+        </div>
+
+        <iframe
+          src="https://odiche-profile-ai-agent.hf.space"
+          loading="lazy"
+          allow="clipboard-write"
+        ></iframe>
+      </div>
+
+      <!-- RIGHT: COPY -->
+      <div class="ai-agent-copy">
+        <h3>Ask My AI Agent</h3>
+
+        <p>
+          I built this AI agent to represent me — both professionally and personally.
+          It’s trained on my background, experience, and body of work.
+        </p>
+
+        <p>
+          Whether you’re a recruiter evaluating my skills or someone casually
+          exploring, the agent adapts how it responds.
+        </p>
+
+        <p><strong>Try asking:</strong></p>
+        <ul>
+          <li>What kind of roles is Odiche suited for?</li>
+          <li>What’s her experience with AI and data?</li>
+          <li>How does she approach complex problems?</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 
   <section id="skills">
