@@ -25,6 +25,172 @@
     </div>
 
 
+
+<style>
+  /* ---------- RESET / BASE ---------- */
+  body {
+    margin: 0;
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f5f7fa;
+    color: #1f2933;
+    line-height: 1.7;
+  }
+
+  a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* ---------- LAYOUT ---------- */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+  }
+
+  section {
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  section:last-of-type {
+    border-bottom: none;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* ---------- HEADER ---------- */
+  header {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f8fafc;
+  }
+
+  header .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+
+  header h1 {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+  }
+
+  .contact-info {
+    font-size: 0.95rem;
+    opacity: 0.85;
+  }
+
+  .social-links a {
+    margin: 0 0.5rem;
+    font-weight: 500;
+    color: #e5e7eb;
+  }
+
+  .cta-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 1.8rem;
+    background: #2563eb;
+    color: white;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+  }
+
+  /* ---------- CARDS ---------- */
+  .job-card,
+  .project-card,
+  .skill-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  }
+
+  ul {
+    padding-left: 1.2rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  /* ---------- SKILLS GRID ---------- */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  /* ---------- PROJECT LINKS ---------- */
+  .project-links a {
+    margin-right: 1rem;
+    font-weight: 600;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    background: #0f172a;
+    color: #cbd5e1;
+    text-align: center;
+  }
+
+  footer .container {
+    padding: 2rem 1.5rem;
+  }
+
+  /* ---------- MOBILE ---------- */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.3rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    .container {
+      padding: 3rem 1.2rem;
+    }
+  }
+</style>
+
+    
+
     <style>
   /* AI AGENT SECTION */
   .ai-agent-grid {
@@ -114,7 +280,7 @@
       <!-- LEFT: AI CHAT -->
       <div class="ai-agent-card">
         <div class="ai-agent-card-header">
-          Profile Assistant
+          INTERACTIVE AI PROFILE AGENT
         </div>
 
         <iframe
